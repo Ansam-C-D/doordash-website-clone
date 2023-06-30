@@ -596,7 +596,8 @@ footer .main-points-section .main-col .city-name span:hover{
     border:medium none;
     background: transparent;
     font-family: var(--main-font);
-    font-weight:500
+    font-weight:500;
+    appearance: none;
 }
 .copyright-section .country-input .arrow-down{
     position:absolute;
