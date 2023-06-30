@@ -1,0 +1,1085 @@
+:root {
+    --main-font: "doordash-font";
+    --main-orange: rgb(235, 23, 0);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--main-font)
+}
+
+body h1 h2 h3 h4 h5 h6 ul {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* ---------------------------------font family---------------------------------------- */
+
+@font-face {
+    font-family: "doordash-font";
+    src: url("assets/fonts/TTNorms-Regular.woff2");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "doordash-font";
+    src: url("assets/fonts/TTNorms-Medium.woff2");
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: "doordash-font";
+    src: url("assets/fonts/TTNorms-Bold.woff2");
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: "doordash-font";
+    src: url("assets/fonts/TTNorms-ExtraBold.woff2");
+    font-weight: 900;
+}
+
+/* -----------------------------------setting components display none----------------------- */
+
+
+/* .saved-address-link {
+    display: none;
+} */
+
+.location-icon {
+    display: none
+}
+
+.logo-text {
+    display: none;
+}
+
+
+/* --------------------------------------for devices above upto 768 pixel screen------------- */
+
+header {
+    position: relative;
+}
+
+header .account-section {
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    margin-top: 16px;
+    padding-right: 24px;
+    display: flex;
+    justify-content: flex-end;
+    gap: 8px;
+
+}
+
+.main-header-background {
+    min-height: 420px;
+    width: 100vw;
+    background-color: rgb(247, 247, 247);
+}
+
+header .background-image {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    background-image: url("https://img.cdn4dd.com/cdn-cgi/image/fit=cover,width=1200,format=auto,quality=60/https://cdn.doordash.com/media/consumer/home/landing/new/hero_landing_us_alt.jpg");
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: center;
+    padding-top: 96px;
+    padding-bottom: 96px;
+    display: flex;
+
+
+}
+
+header .account-section .sign-in {
+    height: 40px;
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+
+}
+
+header .account-section .sign-in span {
+    display: block;
+    font-family: var(--main-font);
+    font-weight: 700;
+    font-size: 18px;
+    color: #fff;
+    padding: 0 12px;
+    letter-spacing: -0.04ch;
+
+}
+
+header .account-section .sign-up {
+    font-size: 18px;
+    font-family: var(--main-font);
+    font-weight: 700;
+    height: 40px;
+    border-radius: 24px;
+    color: var(--main-orange);
+    align-items: center;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+}
+
+header .account-section .sign-up span {
+    padding: 0px 12px;
+    letter-spacing: -0.04ch;
+}
+
+header .main-heading {
+    margin-top: 12px;
+    margin-bottom: 16px;
+    max-width: 334px;
+}
+
+header .main-heading .heading {
+    font-family: var(--main-font);
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 40px;
+    letter-spacing: -0.04ch;
+    color: #fff;
+    text-align: center;
+}
+
+.search-bar-section {
+    padding: 0 20px;
+    max-width: 315px;
+}
+
+.search-bar-section {
+    margin-top: 12px;
+    padding: 0px 20px;
+    text-align:center
+}
+
+header .search-field-div {
+    display: flex;
+    background-color: #fff;
+    width: 100%;
+    max-width: 100%;
+    min-height: 40px;
+    border-radius: 20px;
+    box-shadow: rgb(214, 214, 214) 0px 0px 0px 1px inset;
+}
+
+header .search-bar-section .search-field-div .search {
+    display: flex;
+    align-items: center;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-right: 12px;
+    padding-left: 16px;
+}
+
+header .search-field-div .search-icon {
+    margin-right: 12px;
+    display: flex;
+}
+
+header .search-field-div .input-field {
+    margin: 0px 12px 0px auto;
+}
+
+header .search-field-div .input-field input {
+    color: rgb(96, 96, 96);
+    font-family: var(--main-font);
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: 0ch;
+    font-weight: 500;
+    width: 100%;
+    border: medium none;
+    color: rgb(96, 96, 96)
+}
+
+header .arrow-forward-icon {
+    display: flex;
+    color: rgba(73, 73, 73)
+}
+
+.application-section {
+    max-width: 100%;
+    padding-left: 16px;
+    padding-right: 20px;
+}
+
+.get-the-app {
+    margin: 0px auto;
+    padding: 24px 0px;
+    max-width: 375px;
+}
+
+.get-the-app .row-1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 8px 0;
+}
+
+.get-the-app .row-1 .get-text {
+    width: 161px;
+    margin-right: 16px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+    display: block;
+    letter-spacing: -0.04ch;
+}
+
+.get-the-app .row-1 .app-button {
+    height: 40px;
+    width: auto;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    background-color: var(--main-orange);
+    color: #fff;
+    border-radius: 24px;
+    font-weight: 700;
+    padding: 0 12px;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.get-the-app .row-1 .app-button:hover {
+    background-color: rgb(217, 20, 0);
+}
+
+.get-the-app .row-2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 0;
+    cursor: pointer;
+}
+
+.get-the-app .row-2 .arrow {
+    display: flex;
+}
+
+.get-the-app .row-2 span {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 22px;
+    display: block;
+    letter-spacing: -0.04ch;
+}
+
+.options-field {
+    padding: 8px;
+    max-width: 100%;
+    margin: 40px 0;
+}
+
+#main-options {
+    display: flex;
+    flex-direction: column;
+    max-width:470px;
+    margin:0 auto;
+}
+
+#main-options .option {
+    display: flex;
+    flex-direction: row;
+    padding: 16px;
+}
+
+.option .image {
+    margin-right: 31.5px;
+}
+
+.option .image img {
+    height: 88px;
+    width: 88px;
+}
+
+#main-options .option-desc {
+    max-width: 250px;
+}
+
+#main-options .option-desc h2 {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 40px;
+    text-align: left;
+    letter-spacing: -0.04ch;
+}
+
+#main-options .option-desc h3 {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0ch;
+}
+
+#main-options .option-link {
+    display: flex;
+    align-items: center;
+    margin: 12px 0px 0px;
+    cursor:pointer;
+}
+
+#main-options .option-link span {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 20px;
+    letter-spacing: -0.04ch;
+    color: var(--main-orange);
+    margin-right: 6.359px;
+ 
+}
+
+#main-options .option-link svg {
+    height: 10px;
+    width: 10px;
+}
+.overview-section .overview-contents .get-app-section{
+    display:flex;
+    flex-direction:column;
+    margin-bottom:-288px;
+}
+.overview-section .overview-contents .get-app-section .image-container{
+    margin-left:64px;
+}
+.overview-section .overview-contents .get-app-section img{
+    width:100%;
+}
+.get-app-section .core-content{
+    margin-top:20px;
+    padding-left:16px;
+    padding-right:81.6px;
+    max-width:400px;
+    margin-right:auto;
+    margin-left:auto;
+}
+.overview-section .overview-contents .get-app-section .content-heading{
+    margin-bottom:8px;
+}
+.overview-section .overview-contents .get-app-section .content-heading span{
+    font-size:24px;
+    font-weight:700;
+    line-height:32px;
+    letter-spacing:-0.04ch;
+    display:block;
+}
+.overview-section .overview-contents .get-app-section .content-desc{
+    max-width:100%;
+    margin-bottom:16px;
+}
+
+.overview-section .overview-contents .get-app-section .content-desc span{
+    font-size:14px;
+    font-weight:500;
+    line-height:20px;
+    letter-spacing:0ch;
+    display:block;
+}
+.overview-contents .get-app-button{
+    display:flex;
+    justify-content: flex-start;
+}
+.overview-contents .get-app-button .button{
+    display:flex;
+    align-items: center;
+    min-height:32px;
+    width:auto;
+    background-color: var(--main-orange);
+    color:#fff;
+    transition:background-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s;
+    border-radius:24px;
+    padding:0px 12px;
+    font-weight:700;
+    font-size:14px;
+    line-height:16px;
+    letter-spacing:0ch;
+    white-space:nowrap;
+    cursor:pointer;
+}
+.overview-contents .get-app-button .button:hover{
+    background-color:rgb(217, 20, 0);
+}
+.overview-contents .get-app-button span{
+    display:block;
+}
+.overview-section .overview-contents .restaurent{
+    background:rgb(255,240,237);
+    width:100%;
+    padding:336px 0px 96px;
+}
+.restaurent .image-container img{
+    width:100%;
+}
+.restaurent .image-container {
+    margin-right:64px;
+}
+.restaurent .core-content{
+    max-width:400px;
+    padding-left:16px;
+    padding-right:105.6px;
+    margin-top:20px;
+}
+.restaurent .core-content .content-heading{
+    max-width:100%;
+    margin-bottom:8px
+}
+.restaurent .core-content .content-heading span{
+    font-size:24px;
+    font-weight:700;
+    line-height:32px;
+    letter-spacing:-0.04ch;
+    display:flex;   
+}
+.restaurent .core-content .content-desc{
+    margin-bottom:16px;
+    max-width:100%;
+}
+.restaurent .core-content .content-desc span{
+    font-size:14px;
+    font-weight:500;
+    line-height:20px;
+    letter-spacing:0ch;
+    display:block;
+}
+.footer-section{
+    width:100%;
+    background-color:rgb(25,25,25);
+}
+footer{
+    max-width:1160px;
+    margin:auto;
+    display:flex;
+    flex-direction:column;
+    padding:0px 20px;
+}
+footer .main-points-section{
+    display:flex;
+    justify-content: center;
+    gap:12px;
+}
+footer .main-points-section .main-col{
+    text-align: center;
+    padding-top: 32px;
+    padding-bottom:32px;
+    flex:1 1 0%
+}
+footer .main-points-section .main-col .list{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+footer .main-points-section .main-col h2{
+    margin-bottom:8px;
+    font-size:16px;
+    font-weight:500;
+    line-height:22px;
+    color:#fff;
+}
+footer .main-points-section .main-col .city-name{
+    margin-top:8px;
+    cursor:pointer;
+}
+footer .main-points-section .main-col .city-name span{
+    font-size:14px;
+    font-weight:500;
+    line-height:20px;
+    color:rgb(196,196,196);
+}
+footer .main-points-section .main-col .city-name span:hover{
+    border-bottom: 2px solid #fff;
+    color:#fff;
+}
+.about-section{
+ display: flex;
+ flex-direction: column;   
+}
+.about-section .google-buttons{
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    padding-top:32px;
+    gap:12px 0px
+}
+.about-section .google-buttons .button-main{
+    opacity: .7;
+    cursor:pointer;
+    transition: opacity 0.2s ease 0s;
+    padding:2px 8px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    background-color:rgb(73,73,73);
+}
+.about-section .google-buttons .button-main:hover{
+    opacity:1;
+}
+.about-section span{
+    font-size:14px;
+    font-weight:500;
+    line-height:20px;
+    color:rgb(196,196,196);
+    cursor:pointer;
+    /* display:block; */
+}
+.about-section span:hover{
+    color:#fff;
+    border-bottom:2px solid #fff;
+}
+.about-section .list-content{
+    margin-top:7px;   
+}
+.about-section .next-section{
+    display:flex;
+    flex-direction:column;
+    text-align:center;
+}
+.about-section .next-section .services{
+    padding-top:44px;
+}
+.about-section h2{
+    padding-bottom:8px;
+    font-size:16px;
+    font-weight:500;
+    line-height:22px;
+    color:#fff;
+}
+.copyright-section{
+    display: flex;
+    flex-direction:column;
+    align-items:center;
+    padding:32px 0px;
+}
+
+.copyright-section .country-input{
+    padding:12px;
+}
+.copyright-section .country-input .input-field{
+    width:150px;
+    background-color:rgb(247,247,247);
+    display:flex;
+    align-items: center;
+    justify-content:space-between; 
+    min-height:0px;
+    border-radius:16px;
+    padding:4px 12px;
+    box-shadow:rgb(247,247,247) 0px 0px 0px 1px inset;
+    font-size:14px;
+    line-height:20px;
+    font-weight:500;
+    position: relative;
+}
+.copyright-section .country-input .input-field .input{
+    display: flex;
+}
+.copyright-section .country-input .input-field select{
+    font-size:14px;
+    line-height:10px;
+    letter-spacing:0ch;
+    font-weight:400;
+    border:medium none;
+    background: transparent;
+    font-family: var(--main-font);
+    font-weight:500
+}
+.copyright-section .country-input .arrow-down{
+    position:absolute;
+    background-color: rgb(247,247,247);
+    right:6px;
+    top:4px;
+    height:28px;
+    width:30px;
+    display:flex;
+    align-items: center;  
+    border-radius: 30px;
+   
+}
+footer .policies{
+    display:flex;
+    margin-top:12px;
+    flex-wrap:wrap;
+    justify-content: center;
+}
+footer .policies .policy-link{
+    cursor:pointer;
+    margin-left:16px;
+    display:inline;
+}
+footer .policies span{
+    font-weight:400;
+    line-height:18px;
+    letter-spacing:0ch;
+    color: rgb(196,196,196);
+    font-size:12px;
+    display: block;
+}
+footer .policies span:hover{
+    color:#fff;
+    text-decoration:underline;
+}
+.copyright-section .social-media-connect{
+    display:flex;
+    gap:0px 12px;
+    margin-bottom:4px
+}
+.copyright-section .social-media-connect svg{
+    opacity: .7;
+    cursor:pointer;
+}
+.copyright-section .social-media-connect svg:hover{
+    opacity: 1;
+}
+footer .glob{
+    display:flex;
+    align-items: center;
+    margin-right:8px;
+}
+.policies .icon{
+    display:flex
+}
+.saved-address-link span {
+    font-family: var(--main-font);
+    text-align: center;
+    text-decoration: underline;
+    color: #fff;
+    margin: 16px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 22px;
+    letter-spacing: 0ch;
+    display: inline-block;
+} 
+
+/* -----------------------------for devices with above 768 pixel screen------------- */
+
+@media screen and (min-width:768px) {
+    .saved-address-link {
+        display: block;
+        box-sizing: border-box;
+        cursor: pointer;
+        text-decoration: none;
+        text-align: center;
+    }
+
+    .saved-address-link span {
+        font-family: var(--main-font);
+        text-align: center;
+        text-decoration: underline;
+        color: #fff;
+        margin: 16px;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 22px;
+        letter-spacing: 0ch;
+        display: inline-block;
+    }    
+    header .search-field-div {
+        border-radius: 32px;
+    }
+
+    header .search-field-div .input-field {
+        -moz-box-flex: 1;
+        flex-grow: 1;
+        max-width: 100%;
+        margin-right: 75px;
+    }
+
+    header .search-field-div .input-field input {
+        letter-spacing: 0ch;
+    }
+
+    header .search-field-div .search-icon {
+        display: none;
+    }
+
+    header .search-field-div .location-icon {
+        display: flex;
+        margin-right: 12px;
+    }
+
+    .search-bar-section {
+        max-width: 100%;
+    }
+
+    header .search-bar-section .search-field-div .search {
+        padding-left: 12px;
+    }
+
+    .application-section {
+        display: none;
+    }
+    .option .image img{
+        height:124px;
+        width:124px;
+    }
+    .option .image{
+        margin-right:64px;
+    }
+    .options-field{
+        margin:32px 0
+    }
+    #main-options .option-link svg{
+        transform:translateX(1px);
+    }
+
+    .overview-section .overview-contents .get-app-section{
+        flex-direction: row-reverse;
+    }
+    /* .overview-section .overview-contents .restaurent{
+    
+    } */
+    .restaurent .find-restaurents-section{
+        display:flex;
+    }
+    .restaurent .core-content{
+        margin-right:64px;
+        margin-left:64px;
+        margin-bottom:96px;
+        padding:0;
+    }
+    .restaurent .image-container{
+        flex:2 1 0%;
+        margin-right:0px;
+    }
+    .restaurent .core-content{
+        display:flex;
+        flex-direction:column;
+        flex-grow: 1;
+        flex-shrink: 1;
+        flex-basis:0%;
+    }
+    .get-app-section .core-content{
+        margin-bottom:96px;
+        margin-left:64px;
+        flex-grow: 1;
+        flex-shrink: 1;
+        flex-basis: 0%;
+        padding:0;
+    }
+    .overview-section .overview-contents .get-app-section .image-container{
+        margin-left: 64px;
+        flex: 2 1 0%;
+    }
+    .overview-section .overview-contents .restaurent{
+        padding:96px 0px;
+    }
+    .overview-section .overview-contents .get-app-section{
+        margin-bottom:-20px;
+    }
+    footer .main-points-section{
+        flex-direction: column;
+        gap:32px 0px;
+    }
+    footer .main-points-section .main-col .list{
+        flex-direction: row;
+        justify-content: space-between;
+        text-align: left;
+    }
+    .about-section .next-section{
+        flex-direction:row;
+        justify-content: space-between;
+        text-align: left;
+    }
+    .about-section .next-section .services{
+        padding-top:32px;
+    }
+    footer .main-points-section .points{
+        flex:1 0 0%
+    }
+    footer .main-points-section .main-col h2{
+        text-align: left;
+    }
+    footer .main-points-section .main-col .city-name{
+        margin-top:7px;
+    }
+    footer .main-points-section .main-col{
+        padding-bottom: 32px;
+        padding-top: 32px;
+    }
+    .copyright-section{
+        flex-direction:row-reverse;
+        padding:24px 0 32px 0px;
+    }
+    .copyright-section .social-media-connect{
+        margin-bottom: 4px;
+    }
+    .copyright-section .country-input{
+        padding:10px 12px 2px 12px
+    }
+    footer .policies{
+        margin-top: 7px;
+    }
+    .copyright-section .country-input .input-field{
+        transform:translateY(-2px)   
+    }
+    .about-section .google-buttons{
+        padding-top:72px
+    }
+}
+
+/* ---------------------------for devices with screen size above 960 pixel-------------------------- */
+
+@media screen and (min-width:960px) {
+    header .logo-text {
+        display: block;
+        margin-left: 12px;
+    }
+
+    header .doordash-icon {
+        display: flex;
+        align-items: center;
+    }
+
+    header .logo-text svg {
+        height: 18px;
+        width: 155;
+    }
+
+    header .doordash-icon .logo svg {
+        height: 24px;
+        width: 42px
+    }
+
+    header .main-heading {
+        margin-top: 92px;
+        margin-bottom: 16px;
+        max-width: 668px;
+    }
+
+    header .main-heading .heading {
+        font-size: 64px;
+        line-height: 76px;
+    }
+
+    header .background-image {
+        padding-top: 16px;
+        padding-bottom: 192px;
+    }
+
+    .search-bar-section {
+        margin-top: 16px;
+    }
+
+    .main-header-background {
+        height: 580px;
+    }
+    footer .main-points-section{
+        flex-direction:row;
+        gap:32px 12px;
+    }
+    .about-section .next-section{
+        flex:1 1 0%;
+    }
+    .about-section .google-buttons{
+        flex:1 1 0%;
+        align-items:flex-end;
+        justify-content: flex-start;
+        padding-top:32px;
+    }
+    .about-section{
+        flex-direction:row-reverse;
+    }
+}
+
+/* -------------------------for devices with screen size above 1024 pixel-------------------- */
+
+@media screen and (min-width:1024px){
+    .restaurent .core-content{
+        justify-content:center;
+    }
+    .get-app-section .core-content{
+        display:flex;
+        flex-direction:column;
+        justify-content:center;
+    }
+    .overview-section .overview-contents .get-app-section .content-heading{
+        padding-right:150px;
+    }
+    .overview-section .overview-contents .get-app-section{
+        margin-bottom:-80px
+    }
+    .overview-contents .get-app-button .button{
+        min-height:40px;
+    }
+    .overview-contents .get-app-button span{
+        font-size:16px;
+    }
+    .get-app-section .core-content{
+        margin-top:0;
+    }
+    .overview-section .overview-contents .restaurent{
+        padding:144px 0 96px;
+    }
+    .restaurent .core-content{
+        margin-top: 0px;
+    }
+    footer .policies{
+        margin-bottom:-2px;
+    }
+
+}
+/* --------------------------for devices with screen size above 1440 pixel----------------- */
+
+
+@media screen and (min-width:1440px) {
+
+    header .arrow-forward-icon {
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        height: 40px;
+        width: 40px;
+        border-radius: 100%;
+        background-color: var(--main-orange);
+        transition: background-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s;
+    }
+
+    header .search-bar-section .search-field-div .search {
+        padding-top: 4px;
+        padding-right: 4px;
+        padding-bottom: 4px;
+    }
+
+    header .search-field-div .input-field {
+        margin-right: 68px;
+    }
+
+    header .arrow-forward-icon {
+        color: #fff;
+    }
+    #main-options{
+        flex-direction:row;
+    }
+    #main-options .option{
+        flex-direction:column;
+        margin:0 17px;
+        min-width:360px;
+    }
+    #main-options{
+        max-width:1184px;
+        align-items:start;
+
+    }
+    .options-field{
+        margin:100px 0 96px 0;
+    }
+    .option .image img{
+        height:154px;
+        width:154px;
+        margin-right:63px
+    }
+    .option .image{
+        margin-right:0px;
+        display: flex;
+        justify-content:center;
+    }
+    #main-options .option-desc{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        margin-left:1px;
+    }
+    #main-options .option-desc h2{
+        text-align:center;
+    }
+    #main-options .option-desc h3{
+        text-align:center;
+        margin-top:8px;
+    }
+    #main-options .option-link span{
+        font-size:18px;
+    }
+    #main-options .option-link{
+        margin:14px 0px 0px -4px;
+    }
+    .overview-section .overview-contents .get-app-section .content-heading span{
+        font-size:40px;
+        white-space:pre-line;
+        line-height: 48px;;
+    }
+    .overview-section .overview-contents .get-app-section .content-desc span{
+        font-size: 18px;
+        line-height:24px;   
+    }
+
+    .get-app-section .core-content{
+        flex:4 1 0%;
+        margin-left:0px;   
+    }
+    .overview-section .overview-contents .get-app-section .image-container{
+        display:flex;
+        flex:7 1 0%;
+    }
+    .overview-section .overview-contents .get-app-section{
+        max-width:1184px;
+        margin-left: auto;
+        margin-right:auto;
+        margin-bottom:-23px;
+    }
+    .get-app-section .core-content{
+        max-width:409px;
+        margin-bottom:92px;
+    }
+    .overview-section .overview-contents .get-app-section .content-heading{
+        margin-bottom:12px;
+        padding-right:158px;
+    }
+    .overview-section .overview-contents .restaurent{
+        padding:100px 0 96px;
+    }
+    .restaurent .find-restaurents-section{
+        max-width:1184px;
+        margin-left:auto;
+        margin-right:auto;
+    }
+    .restaurent .core-content .content-heading span{
+        font-size:40px;
+        white-space:pre-line;
+        line-height:48px;
+    }
+    .restaurent .core-content {
+        margin-right:0px;
+        flex:4 1 0%;
+        margin-left:64px;
+        margin-right:7px
+    }
+    .restaurent .image-container{
+        flex: 7 1 0%;
+    }
+    .restaurent .core-content .content-desc span{
+        font-size:18px;
+        line-height:24px
+    }
+    .restaurent .core-content .content-heading{
+        margin-bottom: 12px;
+    }
+    .copyright-section{
+        padding:24px 0 28px 0px;
+        justify-content:space-between;
+    }
+     .copyright-section{
+        padding:24px 0 28px 0px;
+    }
+    footer .policies{
+        margin-bottom:2px;
+    }
+    .policies .icon{
+        margin-bottom:1px
+    }
+}
